@@ -3795,3 +3795,7 @@ input, select, textarea {
 	max-width: 90px;
 	height: 50px;
 }
+
+.button-group {
+	text-align: center;
+}

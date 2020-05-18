@@ -122,6 +122,7 @@
 
 	// display - hide blocks
 	$("#project_1_button").click(function() {
+		document.querySelector("#projects").scrollIntoView();
 		$('#project-list').hide('fast').promise();
 		$('#all_projects').show('fast').promise();
 		$('#project_1').show('fast').promise();
@@ -132,6 +133,7 @@
 	});
 
 	$("#project_2_button").click(function() {
+		document.querySelector("#projects").scrollIntoView();
 		$('#project-list').hide('fast').promise();
 		$('#all_projects').show('fast').promise();
 		$('#project_1').hide('fast').promise();
@@ -142,6 +144,7 @@
 	});
 
 	$("#project_3_button").click(function() {
+		document.querySelector("#projects").scrollIntoView();
 		$('#project-list').hide('fast').promise();
 		$('#all_projects').show('fast').promise();
 		$('#project_1').hide('fast').promise();
@@ -149,6 +152,28 @@
 		$('#project_3').show('fast').promise();
 		$('#project_4').hide('fast').promise();
 		$('#project_5').hide('fast').promise();
+	});
+
+	$("#project_4_button").click(function() {
+		document.querySelector("#projects").scrollIntoView();
+		$('#project-list').hide('fast').promise();
+		$('#all_projects').show('fast').promise();
+		$('#project_1').hide('fast').promise();
+		$('#project_2').hide('fast').promise();
+		$('#project_3').hide('fast').promise();
+		$('#project_4').show('fast').promise();
+		$('#project_5').hide('fast').promise();
+	});
+
+	$("#project_5_button").click(function() {
+		document.querySelector("#projects").scrollIntoView();
+		$('#project-list').hide('fast').promise();
+		$('#all_projects').show('fast').promise();
+		$('#project_1').hide('fast').promise();
+		$('#project_2').hide('fast').promise();
+		$('#project_3').hide('fast').promise();
+		$('#project_4').hide('fast').promise();
+		$('#project_5').show('fast').promise();
 	});
 
 	$("#all_projects").click(function() {
@@ -161,6 +186,5 @@
 		$('#project_4').hide('fast').promise();
 		$('#project_5').hide('fast').promise();
 	});
-
 
 })(jQuery);
