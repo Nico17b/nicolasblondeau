@@ -1,377 +1,1027 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Nicolas Blondeau</title>
-		<meta charset="utf-8" />
-		<meta name="description" content="Nicolas Blondeau's portfolio">
-		<meta name="keywords" content="HTML, CSS, JavaScript, Java, Play Framework">
-		<meta name="author" content="Nicolas Blondeau">
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Nicolas Blondeau is a Full Stack Software Developer">
-		<meta property="og:title" content="Nicolas Blondeau portfolio" />
-		<meta name="og:description" content="Nicolas Blondeau is a Full Stack Software Developer">
-		<meta property="og:type" content="website" />
-		<meta property="og:site_name" content="NicolasBlondeau.com" />
-		<meta property="og:url" content="https://www.nicolasblondeau.com" />
-		<meta property="og:image" content="images/favicon_portfolio_nicolas.png" />
-		<meta property="og:locale" content="en_EN" />
-		<link rel="icon" href="images/favicon_portfolio_nicolas.png" sizes="192x192" />
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<video autoplay muted loop id="videoBg">
-			<source src="images/video.mp4" type="video/mp4">
-		</video>
+<!DOCTYPE html>
+<html lang="en">
 
-			<div id="container">
-				<div class="row">
-					<div class="col-12">
-						<div id="blured">
-							<header id="header" class="alt">
-								<h1>Nicolas Blondeau</h1>
-								<p>Full Stack Software Developer<br />
-								I see technology as a tool to achieve business goals.<br />
-								<a href="https://www.linkedin.com/in/nicolasblondeau/" target="_blank">Linkedin</a></p>
-							</header>
-						</div>
+<head>
+  <title>Nicolas Blondeau | Full Stack Software Developer</title>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Nicolas Blondeau is a Full Stack Software Developer">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Java, Play Framework, Ruby, Rails">
+  <meta name="author" content="Nicolas Blondeau">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta name="description" content="Nicolas Blondeau is a Full Stack Software Developer">
+  <meta property="og:title" content="Nicolas Blondeau | Full Stack Software Developer" />
+  <meta name="og:description" content="Nicolas Blondeau is a Full Stack Software Developer">
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="NicolasBlondeau.com" />
+  <meta property="og:url" content="https://www.nicolasblondeau.com" />
+  <meta property="og:image" content="https://www.nicolasblondeau.com/images/og-image.jpg" />
+  <meta property="og:locale" content="en_EN" />
+  <link rel="icon" href="images/favicon_portfolio_nicolas.png" sizes="192x192" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+
+  <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet" />
+  <!--To Replace with tailwind.css once created-->
+  <link href="https://unpkg.com/@tailwindcss/custom-forms/dist/custom-forms.min.css" rel="stylesheet" />
+  <!--Tailwind Custom Forms - use to standardise form fields - https://github.com/tailwindcss/custom-forms-->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+  <style>
+    body {
+      font-family: 'Clarkson', Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1em;
+      letter-spacing: 0;
+      text-rendering: geometricPrecision;
+      text-transform: none;
+      text-decoration: none;
+      font-size: 15px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+	}
+	article {
+		height: 453px;
+	}
+	.cardbox-details{
+		height: 128px;
+	}
+  </style>
+</head>
+
+<body>
+  <nav class="flex items-center justify-between flex-wrap bg-black p-8">
+    <div class="flex items-center flex-shrink-0 text-white mr-6">
+      <span class="font-semibold text-2xl tracking-tight pr-6"><a href="https://www.nicolasblondeau.com">NICOLAS BLONDEAU</a></span>
+    </div>
+    <div class="block lg:hidden">
+      <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-white border-gray-500 hover:text-white hover:border-white">
+        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <title>Menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+        </svg>
+      </button>
+    </div>
+    <div id="nav-content" class="w-full block flex-grow lg:flex lg:items-left lg:w-auto">
+      <div class="lg:text-left lg:flex-grow font-bold">
+        <a href="#tech-stack" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-500 mr-4">
+          TECH STACK
+        </a>
+        <a href="#projects_top" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-500 mr-4 hidden sm:block">
+          PROJECTS
+        </a>
+        <a href="#contact_top" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-500">
+          CONTACT
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="mt-20 pb-10">
+    <div class="container mx-auto">
+      <div class="items-center flex flex-wrap">
+        <div class="sm:w-full md:w-full xl:w-6/12 px-6 md:mb-40">
+          <h1 class="text-3xl font-semibold">Nicolas Blondeau</h1>
+          <h2 class="mt-4 text-lg leading-relaxed text-gray-600">Full Stack Software Developer</h2>
+          <h3 class="mt-4 text-lg text-gray-600">   </h3>
+          <h4 class="text-xl mt-8">
+			<a class="text-3xl bg-blue-500 hover:bg-blue-200 hover:text-blue-600 hover:border-blue-800 text-white font-bold py-2 px-4 rounded" href="https://www.linkedin.com/in/nicolasblondeau/" target="_blank">Linkedin</a>
+			<a class="text-3xl bg-gray-700 hover:bg-gray-500 hover:text-gray-700 hover:border-gray-800 text-white font-bold py-2 px-4 rounded" href="https://github.com/Nico17b" target="_blank">Github</a>
+			</h4>
+        </div>
+
+        <div id="tech-stack" class="sm:w-full md:w-full xl:w-6/12 mr-auto px-6 pt-24 sm:px-4">
+          <h2 class="text-3xl font-semibold">Tech Stack</h2>
+          <div class="bg-white">
+            <h3 class="text-lg text-gray-800 mt-6 mb-2">Backend</h3>
+            <div class="flex flex-wrap bg-white">
+              <div class="h-24 w-32 text-gray-700 text-center bg-gray-200 p-2 m-2 shadow-lg hover:shadow-xl hover:font-bold">
+                <img src="images/tech/java.png" class="object-scale-down h-10 w-full" />
+                <p class="p-2">JAVA</p>
+              </div>
+              <div class="h-24 w-32 text-gray-700 text-center bg-gray-200 p-2 m-2 shadow-lg hover:shadow-xl hover:font-bold">
+                <img src="images/tech/scala.svg" class="object-scale-down h-10 w-full" />
+                <p class="p-2">Scala</p>
+              </div>
+              <div class="h-24 w-32 text-gray-700 text-center bg-gray-200 p-2 m-2 shadow-lg hover:shadow-xl hover:font-bold">
+                <img src="images/tech/playframework.png" class="object-scale-down h-10 w-full" />
+                <p class="p-2">Play Framework</p>
+              </div>
+              <div class="h-24 w-32 text-gray-700 text-center bg-gray-200 p-2 m-2 shadow-lg hover:shadow-xl hover:font-bold">
+                <img src="images/tech/ruby.png" class="object-scale-down h-10 w-full" />
+                <p class="p-2">Ruby</p>
+              </div>
+              <div class="h-24 w-32 text-gray-700 text-center bg-gray-200 p-2 m-2 shadow-lg hover:shadow-xl hover:font-bold">
+                <img src="images/tech/rails.png" class="object-scale-down h-10 w-full" />
+                <p class="p-2">Rails</p>
+              </div>
+              <div class="h-24 w-32 text-gray-700 text-center bg-gray-200 p-2 m-2 shadow-lg hover:shadow-xl hover:font-bold">
+                <img src="images/tech/mysql.png" class="object-scale-down h-10 w-full" />
+                <p class="p-2">MySql</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white">
+            <h3 class="text-lg text-gray-800 mt-6 mb-2">Frontend</h3>
+            <div class="flex flex-wrap bg-white">
+              <div class="h-24 w-32 text-gray-700 text-center bg-gray-200 p-2 m-2 shadow-lg hover:shadow-xl hover:font-bold">
+                <img src="images/tech/html5.png" class="object-scale-down h-10 w-full" />
+                <p class="p-2">HTML5</p>
+              </div>
+              <div class="h-24 w-32 text-gray-700 text-center bg-gray-200 p-2 m-2 shadow-lg hover:shadow-xl hover:font-bold">
+                <img src="images/tech/css3.png" class="object-scale-down h-10 w-full" />
+                <p class="p-2">CSS3</p>
+              </div>
+              <div class="h-24 w-32 text-gray-700 text-center bg-gray-200 p-2 m-2 shadow-lg hover:shadow-xl hover:font-bold">
+                <img src="images/tech/javascript.png" class="object-scale-down h-10 w-full" />
+                <p class="p-2">JavaScript</p>
+              </div>
+              <div class="h-24 w-32 text-gray-700 text-center bg-gray-200 p-2 m-2 shadow-lg hover:shadow-xl hover:font-bold">
+                <img src="images/tech/bootstrap4.png" class="object-scale-down h-10 w-full" />
+                <p class="p-2">Bootstrap 4</p>
+              </div>
+              <div class="h-24 w-32 text-gray-700 text-center bg-gray-200 p-2 m-2 shadow-lg hover:shadow-xl hover:font-bold">
+                <img src="images/tech/tailwind.png" class="object-scale-down h-10 w-full" />
+                <p class="p-2">Tailwind CSS</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white">
+            <h3 class="text-lg text-gray-800 mt-6 mb-2">DevOps</h3>
+            <div class="flex flex-wrap bg-white">
+              <div class="h-24 w-32 text-gray-700 text-center bg-gray-200 p-2 m-2 shadow-lg hover:shadow-xl hover:font-bold">
+                <img src="images/tech/heroku.png" class="object-scale-down h-10 w-full" />
+                <p class="p-2">Heroku</p>
+              </div>
+              <div class="h-24 w-32 text-gray-700 text-center bg-gray-200 p-2 m-2 shadow-lg hover:shadow-xl hover:font-bold">
+                <img src="images/tech/git.png" class="object-scale-down h-10 w-full" />
+                <p class="p-2">Git</p>
+              </div>
+              <div class="h-24 w-32 text-gray-700 text-center bg-gray-200 p-2 m-2 shadow-lg hover:shadow-xl hover:font-bold">
+                <img src="images/tech/github.png" class="object-scale-down h-10 w-full" />
+                <p class="p-2">Github</p>
+			  </div>
+			  <div class="h-24 w-32 text-gray-700 text-center bg-gray-200 p-2 m-2 shadow-lg hover:shadow-xl hover:font-bold">
+                <img src="images/tech/docker.png" class="object-scale-down h-10 w-full" />
+                <p class="p-2">Docker</p>
+			  </div>
+			  <div class="h-24 w-32 text-gray-700 text-center bg-gray-200 p-2 m-2 shadow-lg hover:shadow-xl hover:font-bold">
+                <img src="images/tech/jenkins.png" class="object-scale-down h-10 w-full" />
+                <p class="p-2">Jenkins</p>
+			  </div>
+              <div class="h-24 w-32 text-gray-700 text-center bg-gray-200 p-2 m-2 shadow-lg hover:shadow-xl hover:font-bold">
+                <img src="images/tech/aws-rds.png" class="object-scale-down h-10 w-full" />
+                <p class="p-2">AWS RDS</p>
+			  </div>
+			  <div class="h-24 w-32 text-gray-700 text-center bg-gray-200 p-2 m-2 shadow-lg hover:shadow-xl hover:font-bold">
+                <img src="images/tech/awsec2.png" class="object-scale-down h-10 w-full" />
+                <p class="p-2">AWS EC2</p>
+              </div>
+              <div class="h-24 w-32 text-gray-700 text-center bg-gray-200 p-2 m-2 shadow-lg hover:shadow-xl hover:font-bold">
+                <img src="images/tech/awss3.png" class="object-scale-down h-10 w-full" />
+                <p class="p-2">AWS S3</p>
+              </div>
+            </div>
+          </div>
+		
+
+		<div class="bg-white">
+            <h3 class="text-lg text-gray-800 mt-6 mb-2">Other</h3>
+            <div class="flex flex-wrap bg-white">
+              <div class="h-24 w-32 text-gray-700 text-center bg-gray-200 p-2 m-2 shadow-lg hover:shadow-xl hover:font-bold">
+                <img src="images/tech/wordpress.png" class="object-scale-down h-10 w-full" />
+                <p class="p-2">Wordpress</p>
+              </div>
+              <div class="h-24 w-32 text-gray-700 text-center bg-gray-200 p-2 m-2 shadow-lg hover:shadow-xl hover:font-bold">
+                <img src="images/tech/stripe.png" class="object-scale-down h-10 w-full" />
+                <p class="p-2">Stripe</p>
+              </div>
+              <div class="h-24 w-32 text-gray-700 text-center bg-gray-200 p-2 m-2 shadow-lg hover:shadow-xl hover:font-bold">
+                <img src="images/tech/trello.png" class="object-scale-down h-10 w-full" />
+                <p class="p-2">Trello</p>
+			  </div>
+			  <div class="h-24 w-32 text-gray-700 text-center bg-gray-200 p-2 m-2 shadow-lg hover:shadow-xl hover:font-bold">
+                <img src="images/tech/google-analytics.png" class="object-scale-down h-10 w-full" />
+                <p class="p-2">Google Analytics</p>
+              </div>
+			  <div class="h-24 w-32 text-gray-700 text-center bg-gray-200 p-2 m-2 shadow-lg hover:shadow-xl hover:font-bold">
+                <img src="images/tech/hotjar.png" class="object-scale-down h-10 w-full" />
+                <p class="p-2">Hotjar</p>
+              </div>
+              <div class="h-24 w-32 text-gray-700 text-center bg-gray-200 p-2 m-2 shadow-lg hover:shadow-xl hover:font-bold">
+                <img src="images/tech/twilio.png" class="object-scale-down h-10 w-full" />
+                <p class="p-2">Twilio</p>
+              </div>
+              <div class="h-24 w-32 text-gray-700 text-center bg-gray-200 p-2 m-2 shadow-lg hover:shadow-xl hover:font-bold">
+                <img src="images/tech/pivotaltracker.png" class="object-scale-down h-10 w-full" />
+                <p class="p-2">Pivotal Tracker</p>
+              </div>
+            </div>
+		  </div>
+
+		</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects_top" class="pb-20 relative block bg-gray-200 hidden sm:block">
+    <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+      style="height: 80px; transform: translateZ(0px);">
+      <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+        version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+        <polygon class="text-gray-200 fill-current" points="2560 0 2560 100 0 100"></polygon>
+      </svg>
+    </div>
+
+    <div id="project_list" class="container my-12 mx-auto px-4 md:px-12 lg:pt-10">
+		<h2 class="text-3xl font-semibold pb-4 pt-4">Projects</h2>
+      <div class="flex flex-wrap -mx-1 lg:-mx-4">
+		  
+			<div class="my-1 px-1 w-full sm:w-1/2 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+				<article class="overflow-hidden rounded-lg shadow-lg bg-gray-100 hover:shadow-xl">
+						<img alt="Placeholder" class="block h-48 w-full" src="images/teambio-engagement/Dashboard.JPG">
+					<header class="flex items-center justify-between leading-tight p-2 md:p-4">
+						<h1 class="text-lg">Team.bio Engagement</h1>
+					</header>
+					<div class="flex justify-between leading-tight p-2 md:p-4 cardbox-details">
+						<p class="leading-6">Teambio is a digital tool measuring the level of engagement of your coworkers and collecting critical information for your organization.</p>
 					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-12">
-						<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li><a href="#stack" class="active">Tech stack</a></li>
-								<li><a href="#projects">Projects</a></li>
-								<li><a href="#contact">Contact</a></li>
-								<li>
-									<a href="#dropdown"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										<img src="https://www.countryflags.io/us/shiny/24.png" class="country-flag">
-									</a>
-									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-									  <a class="dropdown-item" href="index_se.html"><img src="https://www.countryflags.io/se/shiny/24.png" class="country-flag-drop"> <span class="country-text">Svenska</span></a>
-									  <a class="dropdown-item" href="index_fr.html"><img src="https://www.countryflags.io/fr/shiny/24.png" class="country-flag-drop"> <span class="country-text">Français</span></a>
-									</div>
-								</li>
-							</ul>
-						</nav>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-12">
-
-					<div id="main">
-						<!-- stack -->
-							<section id="stack" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<div class="row">
-											<div class="col-md-12">
-												<header class="major">
-													<h2>The technologies I use</h2>
-												</header>
-												<h3>Backend</h3>
-											</div>
-											<div class="col-md-12">
-												<div class="statistics">
-													<div class="tech-box">
-														<img src="images/tech/java.png" class="rounded-badge-image"/>
-														<p>JAVA</p>
-													</div>
-													<div class="tech-box">
-														<img src="images/tech/scala.svg" class="rounded-badge-image"/>
-														<p>Scala</p>
-													</div>
-													<div class="tech-box">
-														<img src="images/tech/playframework.png" class="rounded-badge-image"/>
-														<p>Play Framework</p>
-													</div>
-													<div class="tech-box">
-														<img src="images/tech/mysql.png" class="rounded-badge-image"/>
-														<p>Mysql</p>
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="row">
-											<div class="col-md-12">
-												<h3>Frontend</h3>
-											</div>
-											<div class="col-md-12">
-												<div class="statistics">
-													<div class="tech-box">
-														<img src="images/tech/html5.png" class="rounded-badge-image"/>
-														<p>HTML 5</p>
-													</div>
-													<div class="tech-box">
-														<img src="images/tech/css3.png" class="rounded-badge-image"/>
-														<p>CSS 3</p>
-													</div>
-													<div class="tech-box">
-														<img src="images/tech/javascript.png" class="rounded-badge-image"/>
-														<p>Javascript</p>
-													</div>
-													<div class="tech-box">
-														<img src="images/tech/bootstrap4.png" class="rounded-badge-image"/>
-														<p>Bootstrap 4</p>
-													</div>
-												</div>
-											</div>
-										</div>								
-										<div class="row">
-											<div class="col-md-12">
-												<h3>Other</h3>
-											</div>
-											<div class="col-md-12">
-												<div class="statistics">
-													<div class="tech-box d-inline">
-														<img src="images/tech/heroku.png" class="rounded-badge-image"/>
-														<p>Heroku </p>
-													</div>
-													<div class="tech-box d-inline">
-														<img src="images/tech/git.png" class="rounded-badge-image"/>
-														<p>Git </p>
-													</div>
-													<div class="tech-box d-inline">
-														<img src="images/tech/github.png" class="rounded-badge-image"/>
-														<p>Github </p>
-													</div>
-													<div class="tech-box">
-														<img src="images/tech/aws-rds.png" class="rounded-badge-image"/>
-														<p>AWS RDS </p>
-													</div>
-													<div class="tech-box">
-														<img src="images/tech/awss3.png" class="rounded-badge-image"/>
-														<p>AWS S3 </p>
-													</div>
-													<div class="tech-box">
-														<img src="images/tech/wordpress.png" class="rounded-badge-image"/>
-														<p>Wordpress </p>
-													</div>
-													<div class="tech-box">
-														<img src="images/tech/stripe.png" class="rounded-badge-image"/>
-														<p>Stripe </p>
-													</div>
-													<div class="tech-box">
-														<img src="images/tech/twilio.png" class="rounded-badge-image"/>
-														<p>Twilio </p>
-													</div>
-													<div class="tech-box">
-														<img src="images/tech/trello.png" class="rounded-badge-image"/>
-														<p>Trello </p>
-													</div>
-													<div class="tech-box">
-														<img src="images/tech/pivotaltracker.png" class="rounded-badge-image"/>
-														<p>Pivotal tracker </p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</section>
-
-						<!-- projects -->
-							<section id="projects" class="main special">
-								<header class="major">
-									<h2>Projects</h2>
-								</header>
-								<button class="btn" id="all_projects" style="display: none;"><h3><i class="fas fa-arrow-left"></i> All projects</h3></button>
-
-								<div class="row" id="project-list">
-									<div id="project_1_button" class="col-md-4">
-										<div class="card mb-4 box-shadow">
-											<img class="card-img-top" data-src="images/teambio-engagement/Dashboard.JPG" alt="Team.bio Engagement" style="height: 225px; width: 100%; display: block;" src="images/teambio-engagement/Dashboard.JPG" data-holder-rendered="true">
-											<div class="card-body">
-											<h3>Team.bio Engagement</h3>
-											<p class="card-text">Teambio is a digital tool measuring the level of engagement of your coworkers and collecting critical information for your organization.</p>
-											<div class="d-flex justify-content-center">
-												<div class="btn-group">
-												<button type="button" class="btn btn-sm">Details</button>
-												</div>
-											</div>
-											</div>
-										</div>
-									</div>
-									<div id="project_2_button" class="col-md-4">
-										<div class="card mb-4 box-shadow">
-											<img class="card-img-top" data-src="images/teambio/register.JPG" alt="Team.bio" style="height: 225px; width: 100%; display: block;" src="images/teambio/register.JPG" data-holder-rendered="true">
-											<div class="card-body">
-											<h3>Team.bio</h3>
-											<p class="card-text">Follow your team's happiness in real time and interact with them. More involved managers makes their team 12% more productive.</p>
-											<div class="d-flex justify-content-center">
-												<div class="btn-group">
-												<button type="button" class="btn btn-sm">Details</button>
-												</div>
-											</div>
-											</div>
-										</div>
-									</div>
-									<div id="project_3_button" class="col-md-4">
-										<div class="card mb-4 box-shadow">
-											<img class="card-img-top" data-src="images/frogly/homepage.JPG" alt="Frogly.co" style="height: 225px; width: 100%; display: block;" src="images/frogly/homepage.JPG" data-holder-rendered="true">
-											<div class="card-body">
-											<h3>Frogly.co</h3>
-											<p class="card-text">Automate your prices for your Airbnb listing and earn up to 30% more. (dynamic pricing like in the hotel industry)</p>
-											<div class="d-flex justify-content-center">
-												<div class="btn-group">
-												<button type="button" class="btn btn-sm">Details</button>
-												</div>
-											</div>
-											</div>
-										</div>
-									</div>
-									<div id="project_4_button" class="col-md-4">
-										<div class="card mb-4 box-shadow">
-											<img class="card-img-top" data-src="images/kam/homepage.JPG" alt="Kam" style="height: 225px; width: 100%; display: block;" src="images/kam/homepage.JPG" data-holder-rendered="true">
-											<div class="card-body">
-											<h3>Kamionette.com</h3>
-											<p class="card-text">Online comparator for small trucks rental. Type a city and a date and we find for you the best price for you small truck rental. (Works like a car rental online comparator, but on small trucks niche)</p>
-											<div class="d-flex justify-content-center">
-												<div class="btn-group">
-												<button type="button" class="btn btn-sm">Details</button>
-												</div>
-											</div>
-											</div>
-										</div>
-									</div>
-									<div id="project_5_button" class="col-md-4">
-										<div class="card mb-4 box-shadow">
-											<img class="card-img-top" data-src="images/bomatch/homepage.JPG" alt="" style="height: 225px; width: 100%; display: block;" src="images/bomatch/homepage.JPG" data-holder-rendered="true">
-											<div class="card-body">
-											<h3>Bomatch.se</h3>
-											<p class="card-text">A real estate website matching tenants with landlords. We ask them few questions and attribute them a matching score. They are introduced or not, based on the matching score.</p>
-											<div class="d-flex justify-content-center">
-												<div class="btn-group">
-												<button type="button" class="btn btn-sm">Details</button>
-												</div>
-											</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								
-
-								<div id="project_1" class="row" style="display: none;">
-									<div class="row pt-4">
-										<div class="col-md-8 offset-md-2">
-										<h3>Team.bio Engagement</h3>
-										<div id="carousel_project_1" class="carousel slide" data-ride="carousel">
-											<ol class="carousel-indicators">
-											<li data-target="#carousel_project_1" data-slide-to="0" class="active"></li>
-											<li data-target="#carousel_project_1" data-slide-to="1"></li>
-											<li data-target="#carousel_project_1" data-slide-to="2"></li>
-											</ol>
-											<div class="carousel-inner">
-												<div class="carousel-item active">
-													<img class="d-block w-100" src="images/teambio-engagement/dashboard-2.JPG" alt="Dashboard">
-												</div>
-												<div class="carousel-item">
-													<img class="d-block w-100" src="images/teambio-engagement/Dashboard-team.JPG" alt="Dashboard">
-												</div>
-												<div class="carousel-item">
-													<img class="d-block w-100" src="images/teambio-engagement/login.JPG" alt="Login Page">
-												</div>
-												<div class="carousel-item">
-													<img class="d-block w-100" src="images/teambio-engagement/results.JPG" alt="Results page">
-												</div>
-												<div class="carousel-item">
-													<img class="d-block w-100" src="images/teambio-engagement/Survey.JPG" alt="Survey">
-												</div>
-												<div class="carousel-item">
-													<img class="d-block w-100" src="images/teambio-engagement/Survey2.JPG" alt="Survey">
-												</div>
-											</div>
-											<a class="carousel-control-prev" href="#carousel_project_1" role="button" data-slide="prev">
-											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-											<span class="sr-only">Previous</span>
-											</a>
-											<a class="carousel-control-next" href="#carousel_project_1" role="button" data-slide="next">
-											<span class="carousel-control-next-icon" aria-hidden="true"></span>
-											<span class="sr-only">Next</span>
-											</a>
-										</div>
-										</div>
-									</div>
-
-									<div class="row">
-										<div class="col-md-12">
-											<h4>
-												Le passage classique «Lorem ipsum dolor sit amet…» est attribué à un remixage du texte du philosophe romain Cicéron 45 de C. De Finibus Bonorum et Malorum («Sur les extrêmes du Bien et du Mal»). Plus précisément, on pense que le passage provient des
-											</h4>
-											<ul>
-												<li>eftwg</li>
-											</ul>
-										</div>
-									</div>
-									  
-								</div>
-
-								<div id="project_2" style="display: none;">
-									<div class="row pt-4">
-										<div class="col-md-8 offset-md-2">
-										<h3>Team.bio<h3>
-										</div>
-									</div>
-
-								</div>
-								<div id="project_3" style="display: none;">
-									<div class="row pt-4">
-										<div class="col-md-8 offset-md-2">
-										<h3>Frogly.co</h3>
-										</div>
-									</div>
-								</div>
-								<div id="project_4" style="display: none;">
-									<div class="row pt-4">
-										<div class="col-md-8 offset-md-2">
-										<h3>Kamionette.com</h3>
-										</div>
-									</div>
-								</div>
-								<div id="project_5" style="display: none;">
-									<div class="row pt-4">
-										<div class="col-md-8 offset-md-2">
-										<h3>Bomatch.se</h3>
-										</div>
-									</div>
-								</div>
-							</section>
-
-							<section id="contact" class="main special">
-								<header class="major">
-									<h2>Contact</h2>
-									<p>Email: blondeau.n@gmail.com</p>
-									<p>Phone: +46 7 29 29 63 52</p>
-								</header>
-							</section>
-					</div>
-					</div>
-				</div>
-				
-					<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy; Copyright www.nicolasblondeau.com All rights reserved</p>
+					<footer class="flex items-center leading-none p-2 md:p-4">
+						<button id="project_1_button" class="bg-gray-400 p-4 hover:bg-gray-500 hover:text-white font-bold rounded mr-2">Details</button>
+						<a class="bg-gray-400 p-4 hover:bg-gray-500 hover:text-white font-bold rounded" href="https://www.team.bio" target="_blank">Website</a>
 					</footer>
-
+				</article>
 			</div>
 
-		<!-- Scripts -->
-			<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+			<div class="my-1 px-1 w-full sm:w-1/2 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+				<article class="overflow-hidden rounded-lg shadow-lg bg-gray-100 hover:shadow-xl">
+						<img alt="Placeholder" class="block h-48 w-full" src="images/teambio-admin/admin.JPG">
+					<header class="flex items-center justify-between leading-tight p-2 md:p-4">
+						<h1 class="text-lg">Team.bio Admin</h1>
+					</header>
+					<div class="flex justify-between leading-tight p-2 md:p-4 cardbox-details">
+						<p class="leading-6">Complete administration system used internally to manage users and participants to online surveys provided by Team.bio Engagement.</p>
+					</div>
+				</article>
+			</div>
 
-	</body>
+			<div class="my-1 px-1 w-full sm:w-1/2 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+				<article class="overflow-hidden rounded-lg shadow-lg bg-gray-100 hover:shadow-xl">
+						<img alt="Placeholder" class="block h-48 w-full" src="images/teambio/register.JPG">
+					<header class="flex items-center justify-between leading-tight p-2 md:p-4">
+						<h1 class="text-lg">Team.bio</h1>
+					</header>
+					<div class="flex justify-between leading-tight p-2 md:p-4 cardbox-details">
+						<p class="leading-6">Follow your team's happiness in real time and interact with them. More involved managers makes their team 12% more productive.</p>
+					</div>
+					<footer class="flex items-center leading-none p-2 md:p-4">
+						<button id="project_2_button" class="bg-gray-400 p-4 hover:bg-gray-500 hover:text-white font-bold rounded mr-2">Details</button>
+						<a class="bg-gray-400 p-4 hover:bg-gray-500 hover:text-white font-bold rounded" href="https://www.team.bio" target="_blank">Website</a>
+					</footer>
+				</article>
+			</div>
+
+			<div class="my-1 px-1 w-full sm:w-1/2 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+				<article class="overflow-hidden rounded-lg shadow-lg bg-gray-100 hover:shadow-xl">
+						<img alt="Placeholder" class="block h-48 w-full" src="images/promote/homepage.JPG">
+					<header class="flex items-center justify-between leading-tight p-2 md:p-4">
+						<h1 class="text-lg">Promote International</h1>
+					</header>
+					<div class="flex justify-between leading-tight p-2 md:p-4 cardbox-details">
+						<p class="leading-6">The online learning transfer platform Promote help your learners receive a learning journey that gives the full value of your training investment.</p>
+					</div>
+					<footer class="flex items-center leading-none p-2 md:p-4">
+						<button id="project_3_button" class="bg-gray-400 p-4 hover:bg-gray-500 hover:text-white font-bold rounded mr-2">Details</button>
+						<a class="bg-gray-400 p-4 hover:bg-gray-500 hover:text-white font-bold rounded" href="https://www.promoteint.com" target="_blank">Website</a>
+					</footer>
+				</article>
+			</div>
+
+			<div class="my-1 px-1 w-full sm:w-1/2 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+			<article class="overflow-hidden rounded-lg shadow-lg bg-gray-100 hover:shadow-xl">
+					<img alt="Placeholder" class="block h-48 w-full" src="images/frogly/homepage.JPG">
+				<header class="flex items-center justify-between leading-tight p-2 md:p-4">
+					<h1 class="text-lg">Frogly.co</h1>
+				</header>
+				<div class="flex justify-between leading-tight p-2 md:p-4 cardbox-details">
+					<p class="leading-6">Automate your prices for your Airbnb listing and earn up to 30% more. (dynamic pricing like in the hotel industry)</p>
+				</div>
+				<footer class="flex items-center justify-between leading-none p-2 md:p-4">
+					<button id="project_4_button" class="bg-gray-400 p-4 hover:bg-gray-500 hover:text-white font-bold rounded">Details</button>
+				</footer>
+			</article>
+		</div>
+
+		<div class="my-1 px-1 w-full sm:w-1/2 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+			<article class="overflow-hidden rounded-lg shadow-lg bg-gray-100 hover:shadow-xl">
+					<img alt="Placeholder" class="block h-48 w-full" src="images/kam/homepage.JPG">
+				<header class="flex items-center justify-between leading-tight p-2 md:p-4">
+					<h1 class="text-lg">Kamionette.com</h1>
+				</header>
+				<div class="flex justify-between leading-tight p-2 md:p-4 cardbox-details">
+					<p class="leading-6">Client request for an online comparator for small trucks rental. Type a city and a date and we find for you the best price for you small truck rental.</p>
+				</div>
+				<footer class="flex items-center leading-none p-2 md:p-4">
+					<button id="project_5_button" class="bg-gray-400 p-4 hover:bg-gray-500 hover:text-white font-bold rounded mr-2">Details</button>
+					<a class="bg-gray-400 p-4 hover:bg-gray-500 hover:text-white font-bold rounded" href="https://www.kamionette.com" target="_blank">Website</a>
+				</footer>
+			</article>
+		</div>
+
+		<div class="my-1 px-1 w-full sm:w-1/2 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+			<article class="overflow-hidden rounded-lg shadow-lg bg-gray-100 hover:shadow-xl">
+					<img alt="Placeholder" class="block h-48 w-full" src="images/bomatch/homepage.JPG">
+				<header class="flex items-center justify-between leading-tight p-2 md:p-4">
+					<h1 class="text-lg">Bomatch.se</h1>
+				</header>
+				<div class="flex justify-between leading-tight p-2 md:p-4 cardbox-details">
+					<p class="leading-6">A real estate website matching tenants with landlords. We ask them few questions and attribute them a matching score. They are introduced or not, based on the matching score.</p>
+				</div>
+				<footer class="flex items-center justify-between leading-none p-2 md:p-4">
+					<button id="project_6_button" class="bg-gray-400 p-4 hover:bg-gray-500 hover:text-white font-bold rounded">Details</button>
+				</footer>
+			</article>
+		</div>
+
+		<div class="my-1 px-1 w-full sm:w-1/2 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+			<article class="overflow-hidden rounded-lg shadow-lg bg-gray-100 hover:shadow-xl">
+					<img alt="Placeholder" class="block h-48 w-full" src="images/hplj/hplj.JPG">
+				<header class="flex items-center justify-between leading-tight p-2 md:p-4">
+					<h1 class="text-lg">HPLJ.org</h1>
+				</header>
+				<div class="flex justify-between leading-tight p-2 md:p-4 cardbox-details">
+					<p class="leading-6">Managing, migrating, maintaining the high performance learning journey website promoting the HPLJ certification.</p>
+				</div>
+				<footer class="flex items-center leading-none p-2 md:p-4">
+					<a class="bg-gray-400 p-4 hover:bg-gray-500 hover:text-white font-bold rounded" href="http://www.hplj.org" target="_blank">Website</a>
+				</footer>
+			</article>
+		</div>
+ 
+		<div class="my-1 px-1 w-full sm:w-1/2 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+			<article class="overflow-hidden rounded-lg shadow-lg bg-gray-100 hover:shadow-xl">
+					<img alt="Placeholder" class="block h-48 w-full" src="images/smartphones/homepage.JPG">
+				<header class="flex items-center justify-between leading-tight p-2 md:p-4">
+					<h1 class="text-lg">Smartphones</h1>
+				</header>
+				<div class="flex justify-between leading-tight p-2 md:p-4 cardbox-details">
+					<p class="leading-6 mb-2">Client request for an online Smartphones comparator with 8 000+ different phones registered in their database.</p>
+				</div>
+			</article>
+		</div>
+
+		<div class="my-1 px-1 w-full sm:w-1/2 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+			<article class="overflow-hidden rounded-lg shadow-lg bg-gray-100 hover:shadow-xl">
+					<img alt="Placeholder" class="block h-48 w-full" src="images/bomatch-bizdev/admin.JPG">
+				<header class="flex items-center justify-between leading-tight p-2 md:p-4">
+					<h1 class="text-lg">Bomatch bizdev</h1>
+				</header>
+				<div class="flex justify-between leading-tight p-2 md:p-4 cardbox-details">
+					<p class="leading-6 mb-4">Scraping information from different sources about potential tenants and landlords with the goal to make them use Bomatch.</p>
+				</div>
+			</article>
+		</div>
+
+		<div class="my-1 px-1 w-full sm:w-1/2 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+			<article class="overflow-hidden rounded-lg shadow-lg bg-gray-100 hover:shadow-xl">
+					<img alt="Placeholder" class="block h-48 w-full" src="images/ucpa/homepage.JPG">
+				<header class="flex items-center justify-between leading-tight p-2 md:p-4">
+					<h1 class="text-lg">UCPA.se</h1>
+				</header>
+				<div class="flex justify-between leading-tight p-2 md:p-4 cardbox-details">
+					<p class="leading-6">Implementing a referral program with the development of new features on both front and backend.</p>
+				</div>
+				<footer class="flex items-center leading-none p-2 md:p-4">
+					<a class="bg-gray-400 p-4 hover:bg-gray-500 hover:text-white font-bold rounded" href="https://www.ucpa.se" target="_blank">Website</a>
+				</footer>
+			</article>
+		</div>
+
+		<div class="my-1 px-1 w-full sm:w-1/2 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+			<article class="overflow-hidden rounded-lg shadow-lg bg-gray-100 hover:shadow-xl">
+					<img alt="Placeholder" class="block h-48 w-full" src="images/ucpa/blog.JPG">
+				<header class="flex items-center justify-between leading-tight p-2 md:p-4">
+					<h1 class="text-lg">UCPA Blog</h1>
+				</header>
+				<div class="flex justify-between leading-tight p-2 md:p-4 cardbox-details">
+					<p class="leading-6">Client request to set up a blog using Wordpress. Installing and managing templates and plugins.</p>
+				</div>
+				<footer class="flex items-center leading-none p-2 md:p-4">
+					<a class="bg-gray-400 p-4 hover:bg-gray-500 hover:text-white font-bold rounded" href="https://blog.ucpa.se" target="_blank">Website</a>
+				</footer>
+			</article>
+		</div>
+
+		<div class="my-1 px-1 w-full sm:w-1/2 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+			<article class="overflow-hidden rounded-lg shadow-lg bg-gray-100 hover:shadow-xl">
+					<img alt="Placeholder" class="block h-48 w-full" src="images/alpexpress/homepage.JPG">
+				<header class="flex items-center justify-between leading-tight p-2 md:p-4">
+					<h1 class="text-lg">Alpexpress.se</h1>
+				</header>
+				<div class="flex justify-between leading-tight p-2 md:p-4 cardbox-details">
+					<p class="leading-6">Participating in the development of this platform selling bus and train tickets for international tourists in the French alps.</p>
+				</div>
+			</article>
+		</div>
+
+		<div class="my-1 px-1 w-full sm:w-1/2 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+			<article class="overflow-hidden rounded-lg shadow-lg bg-gray-100 hover:shadow-xl">
+					<img alt="Placeholder" class="block h-48 w-full" src="images/posterdeco/image.png">
+				<header class="flex items-center justify-between leading-tight p-2 md:p-4">
+					<h1 class="text-lg">PosterDeco.fr</h1>
+				</header>
+				<div class="flex justify-between leading-tight p-2 md:p-4 cardbox-details">
+					<p class="leading-6">Client request to set up an e-commerce Wordpress with all e-commerce functionalities and checkout. Using Woocommerce and Stripe.</p>
+				</div>
+			</article>
+		</div>
+
+		<div class="my-1 px-1 w-full sm:w-1/2 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+			<article class="overflow-hidden rounded-lg shadow-lg bg-gray-100 hover:shadow-xl">
+					<img alt="Placeholder" class="block h-48 w-full" src="images/deskoffee/homepage.JPG">
+				<header class="flex items-center justify-between leading-tight p-2 md:p-4">
+					<h1 class="text-lg">Deskoffee.com</h1>
+				</header>
+				<div class="flex justify-between leading-tight p-2 md:p-4 cardbox-details">
+					<p class="leading-6">Landing page built for a client. Goal is to find out if there is any interest in renting private space for business purpose.</p>
+				</div>
+			</article>
+		</div>
+  
+      </div>
+  </div>
+
+    <div id="project_1" class="flex flex-wrap items-center mt-32" style="display: none">
+      <div class="w-full lg:w-1/2 px-10 pt-4 mr-auto ml-auto">
+        <button id="project_1_back" class="text-gray-600 p-2 text-center inline-flex items-center justify-center w-24 h-12 mb-6 shadow-lg rounded-full bg-gray-100 hover:text-gray-100 hover:bg-gray-500">
+          <i class="fas fa-arrow-alt-circle-left text-3xl"></i><h6 class="font-bold pr-2 pl-2">Back</h6>
+		</button>
+        <h3 class="text-3xl mb-2 font-semibold leading-normal">Team.bio Engagement</h3>
+        <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">Teambio is a digital tool measuring the level of engagement of your coworkers and collecting critical information for your organization.</p>
+		<h4 class="text-xl mb-2 font-semibold leading-normal">Tech in use</h4>
+		<ul class="list-disc ml-6">
+			<li class="text-md mb-2 leading-normal font-light text-gray-800">Front end using HTML5, CSS3, custom JavaScrip and Bootstrap 4</li>
+			<li class="text-md mb-2 leading-normal font-light text-gray-800">Backend using Java, Scala, Play Framework 2.6</li>
+			<li class="text-md mb-2 leading-normal font-light text-gray-800">Hosted on Heroku for the app and MySql database on AWS RDS. Assets stored on AWS S3.</li>
+			<li class="text-md mb-2 leading-normal font-light text-gray-800">Users got notifications by email and text messages. PDF generation and export. Lots of charts and tables using Morris.js</li>
+		</ul>
+	  </div>
+	  
+		<div class="w-full lg:w-4/12 px-4 pt-4 mr-auto ml-auto">
+			<div class="carousel_1 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg bg-gray-500">
+				<div>
+					<img alt="Dashboard" src="images/teambio-engagement/Dashboard.JPG" class="w-full h-64 align-middle rounded-t-lg">
+					<blockquote class="relative p-6 mb-4">
+						<svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block" style="height:95px;top:-94px">
+						<polygon points="-30,95 583,95 583,65" class="text-gray-500 fill-current"></polygon>
+						</svg>
+						<h4 class="text-xl font-bold text-white">Dashboard</h4>
+					</blockquote>
+				</div>
+				<div>
+					<img alt="Dashboard_2" src="images/teambio-engagement/dashboard-2.JPG" class="w-full h-64 align-middle rounded-t-lg">
+					<blockquote class="relative p-6 mb-4">
+						<svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block" style="height:95px;top:-94px">
+						<polygon points="-30,95 583,95 583,65" class="text-gray-500 fill-current"></polygon>
+						</svg>
+						<h4 class="text-xl font-bold text-white">Dashboard suite</h4>
+					</blockquote>
+				</div>
+				<div>
+					<img alt="Login" src="images/teambio-engagement/login.JPG" class="w-full h-64 align-middle rounded-t-lg">
+					<blockquote class="relative p-6 mb-4">
+						<svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block" style="height:95px;top:-94px">
+						<polygon points="-30,95 583,95 583,65" class="text-gray-500 fill-current"></polygon>
+						</svg>
+						<h4 class="text-xl font-bold text-white">Login page</h4>
+					</blockquote>
+				</div>
+				<div>
+					<img alt="Results" src="images/teambio-engagement/results.JPG" class="w-full h-64 align-middle rounded-t-lg">
+					<blockquote class="relative p-6 mb-4">
+						<svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block" style="height:95px;top:-94px">
+						<polygon points="-30,95 583,95 583,65" class="text-gray-500 fill-current"></polygon>
+						</svg>
+						<h4 class="text-xl font-bold text-white">Results</h4>
+					</blockquote>
+				</div>
+				<div>
+					<img alt="Survey" src="images/teambio-engagement/Survey.JPG" class="w-full h-64 align-middle rounded-t-lg">
+					<blockquote class="relative p-6 mb-4">
+						<svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block" style="height:95px;top:-94px">
+						<polygon points="-30,95 583,95 583,65" class="text-gray-500 fill-current"></polygon>
+						</svg>
+						<h4 class="text-xl font-bold text-white">Survey page</h4>
+					</blockquote>
+				</div>
+				<div>
+					<img alt="Survey_2" src="images/teambio-engagement/Survey2.JPG" class="w-full h-64 align-middle rounded-t-lg">
+					<blockquote class="relative p-6 mb-4">
+						<svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block" style="height:95px;top:-94px">
+						<polygon points="-30,95 583,95 583,65" class="text-gray-500 fill-current"></polygon>
+						</svg>
+						<h4 class="text-xl font-bold text-white">Survey answer example</h4>
+					</blockquote>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="project_2" class="flex flex-wrap items-center mt-32" style="display: none">
+		<div class="w-full md:w-5/12 px-4 pt-4 mr-auto ml-auto">
+		  <button id="project_2_back" class="text-gray-600 p-2 text-center inline-flex items-center justify-center w-24 h-12 mb-6 shadow-lg rounded-full bg-gray-100  hover:text-gray-100 hover:bg-gray-500">
+			<i class="fas fa-arrow-alt-circle-left text-3xl"></i><h6 class="font-bold pr-2 pl-2">Back</h6>
+		  </button>
+		  <h3 class="text-3xl mb-2 font-semibold leading-normal">Team.bio</h3>
+		  <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">Follow your team's happiness in real time and interact with them. More involved managers makes their team 12% more productive.</p>
+			<h4 class="text-xl mb-2 font-semibold leading-normal">Tech in use</h4>
+			<ul class="list-disc ml-6">
+				<li class="text-md mb-2 leading-normal font-light text-gray-800">Front end using HTML5, CSS3, custom JavaScrip and Bootstrap 3</li>
+				<li class="text-md mb-2 leading-normal font-light text-gray-800">Backend using Java, Scala, Play Framework 2.3</li>
+				<li class="text-md mb-2 leading-normal font-light text-gray-800">Hosted on Heroku for the app and MySql database on AWS RDS. Assets stored on AWS S3.</li>
+				<li class="text-md mb-2 leading-normal font-light text-gray-800">Users get notifications by email and text messages using Twilio. Subscription system using Stripe. </li>
+			</ul>
+		</div>
+		<div class="w-full lg:w-4/12 px-4 pt-4 mr-auto ml-auto">
+			<div class="carousel_2 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg bg-gray-500">
+				<div>
+					<img alt="Dashboard" src="images/teambio/dashboard-james.JPG" class="w-full h-64 align-middle rounded-t-lg">
+					<blockquote class="relative p-6 mb-4">
+						<svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block" style="height:95px;top:-94px">
+						<polygon points="-30,95 583,95 583,65" class="text-gray-500 fill-current"></polygon>
+						</svg>
+						<h4 class="text-xl font-bold text-white">Dashboard</h4>
+					</blockquote>
+				</div>
+				<div>
+					<img alt="Dashboard_2" src="images/teambio/dashboard.JPG" class="w-full h-64 align-middle rounded-t-lg">
+					<blockquote class="relative p-6 mb-4">
+						<svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block" style="height:95px;top:-94px">
+						<polygon points="-30,95 583,95 583,65" class="text-gray-500 fill-current"></polygon>
+						</svg>
+						<h4 class="text-xl font-bold text-white">Dashboard suite</h4>
+					</blockquote>
+				</div>
+				<div>
+					<img alt="Register" src="images/teambio/register.JPG" class="w-full h-64 align-middle rounded-t-lg">
+					<blockquote class="relative p-6 mb-4">
+						<svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block" style="height:95px;top:-94px">
+						<polygon points="-30,95 583,95 583,65" class="text-gray-500 fill-current"></polygon>
+						</svg>
+						<h4 class="text-xl font-bold text-white">Register</h4>
+					</blockquote>
+				</div>
+				<div>
+					<img alt="Product_tour" src="images/teambio/product-tour.JPG" class="w-full h-64 align-middle rounded-t-lg">
+					<blockquote class="relative p-6 mb-4">
+						<svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block" style="height:95px;top:-94px">
+						<polygon points="-30,95 583,95 583,65" class="text-gray-500 fill-current"></polygon>
+						</svg>
+						<h4 class="text-xl font-bold text-white">Product tour</h4>
+					</blockquote>
+				</div>
+				<div>
+					<img alt="Notifications" src="images/teambio/notifications.JPG" class="w-full h-64 align-middle rounded-t-lg">
+					<blockquote class="relative p-6 mb-4">
+						<svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block" style="height:95px;top:-94px">
+						<polygon points="-30,95 583,95 583,65" class="text-gray-500 fill-current"></polygon>
+						</svg>
+						<h4 class="text-xl font-bold text-white">Notifications</h4>
+					</blockquote>
+				</div>
+				<div>
+					<img alt="Team_happiness" src="images/teambio/team-happiness.JPG" class="w-full h-64 align-middle rounded-t-lg">
+					<blockquote class="relative p-6 mb-4">
+						<svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block" style="height:95px;top:-94px">
+						<polygon points="-30,95 583,95 583,65" class="text-gray-500 fill-current"></polygon>
+						</svg>
+						<h4 class="text-xl font-bold text-white">Team's happiness</h4>
+					</blockquote>
+				</div>
+				<div>
+					<img alt="Team_feedback" src="images/teambio/team-feedback.JPG" class="w-full h-64 align-middle rounded-t-lg">
+					<blockquote class="relative p-6 mb-4">
+						<svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block" style="height:95px;top:-94px">
+						<polygon points="-30,95 583,95 583,65" class="text-gray-500 fill-current"></polygon>
+						</svg>
+						<h4 class="text-xl font-bold text-white">Team's feedback</h4>
+					</blockquote>
+				</div>
+				<div>
+					<img alt="Team_selection" src="images/teambio/team-selection.JPG" class="w-full h-64 align-middle rounded-t-lg">
+					<blockquote class="relative p-6 mb-4">
+						<svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block" style="height:95px;top:-94px">
+						<polygon points="-30,95 583,95 583,65" class="text-gray-500 fill-current"></polygon>
+						</svg>
+						<h4 class="text-xl font-bold text-white">Team selection</h4>
+					</blockquote>
+				</div>
+				<div>
+					<img alt="Team_skills" src="images/teambio/team-skills.JPG" class="w-full h-64 align-middle rounded-t-lg">
+					<blockquote class="relative p-6 mb-4">
+						<svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block" style="height:95px;top:-94px">
+						<polygon points="-30,95 583,95 583,65" class="text-gray-500 fill-current"></polygon>
+						</svg>
+						<h4 class="text-xl font-bold text-white">Team's skills</h4>
+					</blockquote>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="project_3" class="flex flex-wrap items-center mt-32" style="display: none">
+		<div class="w-full md:w-5/12 px-4 pt-4 mr-auto ml-auto">
+		  <button id="project_3_back" class="text-gray-600 p-2 text-center inline-flex items-center justify-center w-24 h-12 mb-6 shadow-lg rounded-full bg-gray-100  hover:text-gray-100 hover:bg-gray-500">
+			<i class="fas fa-arrow-alt-circle-left text-3xl"></i><h6 class="font-bold pr-2 pl-2">Back</h6>
+		  </button>
+		  <h3 class="text-3xl mb-2 font-semibold leading-normal">Promote International</h3>
+		  <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">Automate your prices for your Airbnb listing and earn up to 30% more. (dynamic pricing like in the hotel industry)</p>
+			<h4 class="text-xl mb-2 font-semibold leading-normal">Tech in use</h4>
+			<ul class="list-disc ml-6">
+				<li class="text-md mb-2 leading-normal font-light text-gray-800">Front end using custom HTML5, CSS3 and JavaScrip and Tailwind CSS</li>
+				<li class="text-md mb-2 leading-normal font-light text-gray-800">Backend using Ruby and the Ruby on rails framework</li>
+				<li class="text-md mb-2 leading-normal font-light text-gray-800">Docker, Jenkins, Spectre</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="project_4" class="flex flex-wrap items-center mt-32" style="display: none">
+		<div class="w-full md:w-5/12 px-4 pt-4 mr-auto ml-auto">
+		  <button id="project_4_back" class="text-gray-600 p-2 text-center inline-flex items-center justify-center w-24 h-12 mb-6 shadow-lg rounded-full bg-gray-100  hover:text-gray-100 hover:bg-gray-500">
+			<i class="fas fa-arrow-alt-circle-left text-3xl"></i><h6 class="font-bold pr-2 pl-2">Back</h6>
+		  </button>
+		  <h3 class="text-3xl mb-2 font-semibold leading-normal">Frogly.co</h3>
+		  <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">Automate your prices for your Airbnb listing and earn up to 30% more. (dynamic pricing like in the hotel industry)</p>
+			<h4 class="text-xl mb-2 font-semibold leading-normal">Tech in use</h4>
+			<ul class="list-disc ml-6">
+				<li class="text-md mb-2 leading-normal font-light text-gray-800">Front end using HTML5, CSS3, custom JavaScrip and Bootstrap 3</li>
+				<li class="text-md mb-2 leading-normal font-light text-gray-800">Backend using Java, Scala, Play Framework 2.3</li>
+				<li class="text-md mb-2 leading-normal font-light text-gray-800">Hosted on Heroku for the app and MySql database on AWS RDS. Assets stored on AWS S3.</li>
+				<li class="text-md mb-2 leading-normal font-light text-gray-800">System based on data retrived from multiple APIs and an inhouse developed algorythm. </li>
+			</ul>
+		</div>
+		<div class="w-full lg:w-4/12 px-4 pt-4 mr-auto ml-auto">
+			<div class="carousel_4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg bg-gray-500">
+				<div>
+					<img alt="Homepage" src="images/frogly/homepage.JPG" class="w-full h-64 align-middle rounded-t-lg">
+					<blockquote class="relative p-6 mb-4">
+						<svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block" style="height:95px;top:-94px">
+						<polygon points="-30,95 583,95 583,65" class="text-gray-500 fill-current"></polygon>
+						</svg>
+						<h4 class="text-xl font-bold text-white">Homepage</h4>
+					</blockquote>
+				</div>
+				<div>
+					<img alt="Calendar" src="images/frogly/calendrier.JPG" class="w-full h-64 align-middle rounded-t-lg">
+					<blockquote class="relative p-6 mb-4">
+						<svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block" style="height:95px;top:-94px">
+						<polygon points="-30,95 583,95 583,65" class="text-gray-500 fill-current"></polygon>
+						</svg>
+						<h4 class="text-xl font-bold text-white">Calendar with prices</h4>
+					</blockquote>
+				</div>
+				<div>
+					<img alt="Listing" src="images/frogly/listing.JPG" class="w-full h-64 align-middle rounded-t-lg">
+					<blockquote class="relative p-6 mb-4">
+						<svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block" style="height:95px;top:-94px">
+						<polygon points="-30,95 583,95 583,65" class="text-gray-500 fill-current"></polygon>
+						</svg>
+						<h4 class="text-xl font-bold text-white">Listing page</h4>
+					</blockquote>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="project_5" class="flex flex-wrap items-center mt-32" style="display: none">
+		<div class="w-full md:w-5/12 px-4 pt-4 mr-auto ml-auto">
+		  <button id="project_5_back" class="text-gray-600 p-2 text-center inline-flex items-center justify-center w-24 h-12 mb-6 shadow-lg rounded-full bg-gray-100  hover:text-gray-100 hover:bg-gray-500">
+			<i class="fas fa-arrow-alt-circle-left text-3xl"></i><h6 class="font-bold pr-2 pl-2">Back</h6>
+		  </button>
+		  <h3 class="text-3xl mb-2 font-semibold leading-normal">Kamionette.com</h3>
+		  <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">Online comparator for small trucks rental. Type a city and a date and we find for you the best price for you small truck rental. (Works like a car rental online comparator, but on small trucks niche)</p>
+		  <h4 class="text-xl mb-2 font-semibold leading-normal">Tech in use</h4>
+			<ul class="list-disc ml-6">
+				<li class="text-md mb-2 leading-normal font-light text-gray-800">Front end using HTML5, CSS3, custom JavaScrip and Bootstrap 3</li>
+				<li class="text-md mb-2 leading-normal font-light text-gray-800">Backend using Java, Scala, Play Framework 2.6</li>
+				<li class="text-md mb-2 leading-normal font-light text-gray-800">Hosted on Heroku for the app and MySql database on JawDB. Assets stored on AWS S3.</li>
+				<li class="text-md mb-2 leading-normal font-light text-gray-800">Use of different travel APIs to find the best prices arround you. </li>
+			</ul>
+		</div>
+		<div class="w-full lg:w-4/12 px-4 pt-4 mr-auto ml-auto">
+			<div class="carousel_5 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg bg-gray-500">
+				<div>
+					<img alt="Homepage" src="images/kam/homepage.JPG" class="w-full h-64 align-middle rounded-t-lg">
+					<blockquote class="relative p-6 mb-4">
+						<svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block" style="height:95px;top:-94px">
+						<polygon points="-30,95 583,95 583,65" class="text-gray-500 fill-current"></polygon>
+						</svg>
+						<h4 class="text-xl font-bold text-white">Homepage</h4>
+					</blockquote>
+				</div>
+				<div>
+					<img alt="Calendar" src="images/kam/loading.JPG" class="w-full h-64 align-middle rounded-t-lg">
+					<blockquote class="relative p-6 mb-4">
+						<svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block" style="height:95px;top:-94px">
+						<polygon points="-30,95 583,95 583,65" class="text-gray-500 fill-current"></polygon>
+						</svg>
+						<h4 class="text-xl font-bold text-white">Loading</h4>
+					</blockquote>
+				</div>
+				<div>
+					<img alt="Listing" src="images/kam/results.JPG" class="w-full h-64 align-middle rounded-t-lg">
+					<blockquote class="relative p-6 mb-4">
+						<svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block" style="height:95px;top:-94px">
+						<polygon points="-30,95 583,95 583,65" class="text-gray-500 fill-current"></polygon>
+						</svg>
+						<h4 class="text-xl font-bold text-white">Result list</h4>
+					</blockquote>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="project_6" class="flex flex-wrap items-center mt-32" style="display: none">
+		<div class="w-full md:w-5/12 px-4 pt-4 mr-auto ml-auto">
+		  <button id="project_6_back" class="text-gray-600 p-2 text-center inline-flex items-center justify-center w-24 h-12 mb-6 shadow-lg rounded-full bg-gray-100  hover:text-gray-100 hover:bg-gray-500">
+			<i class="fas fa-arrow-alt-circle-left text-3xl"></i><h6 class="font-bold pr-2 pl-2">Back</h6>
+		  </button>
+		  <h3 class="text-3xl mb-2 font-semibold leading-normal">Bomatch.se</h3>
+		  <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">A real estate website matching tenants with landlords. We ask them few questions and attribute them a matching score. They are introduced or not, based on the matching score.</p>
+			<ul class="list-disc ml-6">
+				<li class="text-md mb-2 leading-normal font-light text-gray-800">Front end using HTML5, CSS3, custom JavaScrip and Bootstrap 3</li>
+				<li class="text-md mb-2 leading-normal font-light text-gray-800">Backend using Java, Scala, Play Framework 2.2</li>
+				<li class="text-md mb-2 leading-normal font-light text-gray-800">Hosted on Heroku for the app and MySql database on AWS RDS. Assets stored on AWS S3.</li>
+				<li class="text-md mb-2 leading-normal font-light text-gray-800">Matching algorythm based on multiple criterias modeling your probability to make a successful deal. </li>
+			</ul>
+		</div>
+		<div class="w-full lg:w-4/12 px-4 pt-4 mr-auto ml-auto">
+			<div class="carousel_6 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg bg-gray-500">
+				<div>
+					<img alt="Homepage" src="images/bomatch/homepage.JPG" class="w-full h-64 align-middle rounded-t-lg">
+					<blockquote class="relative p-6 mb-4">
+						<svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block" style="height:95px;top:-94px">
+						<polygon points="-30,95 583,95 583,65" class="text-gray-500 fill-current"></polygon>
+						</svg>
+						<h4 class="text-xl font-bold text-white">Homepage</h4>
+					</blockquote>
+				</div>
+				<div>
+					<img alt="Register" src="images/bomatch/register.JPG" class="w-full h-64 align-middle rounded-t-lg">
+					<blockquote class="relative p-6 mb-4">
+						<svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block" style="height:95px;top:-94px">
+						<polygon points="-30,95 583,95 583,65" class="text-gray-500 fill-current"></polygon>
+						</svg>
+						<h4 class="text-xl font-bold text-white">Register</h4>
+					</blockquote>
+				</div>
+				<div>
+					<img alt="Register_1" src="images/bomatch/register1.JPG" class="w-full h-64 align-middle rounded-t-lg">
+					<blockquote class="relative p-6 mb-4">
+						<svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block" style="height:95px;top:-94px">
+						<polygon points="-30,95 583,95 583,65" class="text-gray-500 fill-current"></polygon>
+						</svg>
+						<h4 class="text-xl font-bold text-white">Register details 1</h4>
+					</blockquote>
+				</div>
+				<div>
+					<img alt="Register_2" src="images/bomatch/register2.JPG" class="w-full h-64 align-middle rounded-t-lg">
+					<blockquote class="relative p-6 mb-4">
+						<svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block" style="height:95px;top:-94px">
+						<polygon points="-30,95 583,95 583,65" class="text-gray-500 fill-current"></polygon>
+						</svg>
+						<h4 class="text-xl font-bold text-white">Register details 2</h4>
+					</blockquote>
+				</div>
+				<div>
+					<img alt="Flat" src="images/bomatch/screeenshot-flat.png" class="w-full h-64 align-middle rounded-t-lg">
+					<blockquote class="relative p-6 mb-4">
+						<svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block" style="height:95px;top:-94px">
+						<polygon points="-30,95 583,95 583,65" class="text-gray-500 fill-current"></polygon>
+						</svg>
+						<h4 class="text-xl font-bold text-white">Flat</h4>
+					</blockquote>
+				</div>
+				<div>
+					<img alt="Tenant" src="images/bomatch/tenanttt.jpg" class="w-full h-64 align-middle rounded-t-lg">
+					<blockquote class="relative p-6 mb-4">
+						<svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block" style="height:95px;top:-94px">
+						<polygon points="-30,95 583,95 583,65" class="text-gray-500 fill-current"></polygon>
+						</svg>
+						<h4 class="text-xl font-bold text-white">Tenant page</h4>
+					</blockquote>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+  </section>
+
+
+  <section id="contact_top" class="pb-40 relative block bg-black">
+    <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+      style="height:80px;transform:translateZ(0)"><svg class="absolute bottom-0 overflow-hidden"
+        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+        <polygon class="text-black fill-current" points="2560 0 2560 100 0 100"></polygon>
+      </svg>
+    </div>
+    <div class="container mx-auto px-4 pt-40">
+      <div class="flex flex-wrap text-center justify-center">
+        <div class="w-full lg:w-6/12 px-4">
+          <h2 class="text-4xl font-semibold text-white mb-12">Contact</h2>
+            <h5 class="text-lg text-white mt-6">Email: blondeau.n@gmail.com</h5>
+            <h5 class="text-lg text-white mt-6">Phone: +46 7 29 29 63 52</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pb-10 relative block bg-black">   
+    <div class="flex flex-wrap items-center md:justify-between justify-center">
+      <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+        <div class="text-sm text-white py-1">
+          Copyright © 2020 www.nicolasblondeau.com
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <script>
+	(function($) {
+		// display - hide blocks
+		$("#project_1_button").click(function() {
+			document.querySelector("#projects_top").scrollIntoView();
+			$('#project_list').hide('fast').promise();
+			$('#project_1').show('fast').promise();
+			$('#project_2').hide('fast').promise();
+			$('#project_3').hide('fast').promise();
+			$('#project_4').hide('fast').promise();
+			$('#project_5').hide('fast').promise();
+			$('#project_6').hide('fast').promise();
+		});
+
+		$("#project_2_button").click(function() {
+			document.querySelector("#projects_top").scrollIntoView();
+			$('#project_list').hide('fast').promise();
+			$('#project_1').hide('fast').promise();
+			$('#project_2').show('fast').promise();
+			$('#project_3').hide('fast').promise();
+			$('#project_4').hide('fast').promise();
+			$('#project_5').hide('fast').promise();	
+			$('#project_6').hide('fast').promise();
+		});
+
+		$("#project_3_button").click(function() {
+			document.querySelector("#projects_top").scrollIntoView();
+			$('#project_list').hide('fast').promise();
+			$('#project_1').hide('fast').promise();
+			$('#project_2').hide('fast').promise();
+			$('#project_3').show('fast').promise();
+			$('#project_4').hide('fast').promise();
+			$('#project_5').hide('fast').promise();	
+			$('#project_6').hide('fast').promise();
+		});
+
+		$("#project_4_button").click(function() {
+			document.querySelector("#projects_top").scrollIntoView();
+			$('#project_list').hide('fast').promise();
+			$('#project_1').hide('fast').promise();
+			$('#project_2').hide('fast').promise();
+			$('#project_3').hide('fast').promise();
+			$('#project_4').show('fast').promise();
+			$('#project_5').hide('fast').promise();	
+			$('#project_6').hide('fast').promise();
+		});
+
+		$("#project_5_button").click(function() {
+			document.querySelector("#projects_top").scrollIntoView();
+			$('#project_list').hide('fast').promise();
+			$('#project_1').hide('fast').promise();
+			$('#project_2').hide('fast').promise();
+			$('#project_3').hide('fast').promise();
+			$('#project_4').hide('fast').promise();
+			$('#project_5').show('fast').promise();	
+			$('#project_6').hide('fast').promise();
+		});
+
+		$("#project_6_button").click(function() {
+			document.querySelector("#projects_top").scrollIntoView();
+			$('#project_list').hide('fast').promise();
+			$('#project_1').hide('fast').promise();
+			$('#project_2').hide('fast').promise();
+			$('#project_3').hide('fast').promise();
+			$('#project_4').hide('fast').promise();
+			$('#project_5').hide('fast').promise();	
+			$('#project_6').show('fast').promise();	
+		});
+
+		$("#project_1_back").click(function() {
+			document.querySelector("#projects_top").scrollIntoView();
+			$('#project_list').show('fast').promise();
+			$('#project_1').hide('fast').promise();
+			$('#project_2').hide('fast').promise();
+			$('#project_3').hide('fast').promise();
+			$('#project_4').hide('fast').promise();
+			$('#project_5').hide('fast').promise();
+			$('#project_6').hide('fast').promise();
+		});
+
+		$("#project_2_back").click(function() {
+			document.querySelector("#projects_top").scrollIntoView();
+			$('#project_list').show('fast').promise();
+			$('#project_1').hide('fast').promise();
+			$('#project_2').hide('fast').promise();
+			$('#project_3').hide('fast').promise();
+			$('#project_4').hide('fast').promise();
+			$('#project_5').hide('fast').promise();
+			$('#project_6').hide('fast').promise();
+		});
+
+		$("#project_3_back").click(function() {
+			document.querySelector("#projects_top").scrollIntoView();
+			$('#project_list').show('fast').promise();
+			$('#project_1').hide('fast').promise();
+			$('#project_2').hide('fast').promise();
+			$('#project_3').hide('fast').promise();
+			$('#project_4').hide('fast').promise();
+			$('#project_5').hide('fast').promise();
+			$('#project_6').hide('fast').promise();
+		});
+
+		$("#project_4_back").click(function() {
+			document.querySelector("#projects_top").scrollIntoView();
+			$('#project_list').show('fast').promise();
+			$('#project_1').hide('fast').promise();
+			$('#project_2').hide('fast').promise();
+			$('#project_3').hide('fast').promise();
+			$('#project_4').hide('fast').promise();
+			$('#project_5').hide('fast').promise();
+			$('#project_6').hide('fast').promise();
+		});
+
+		$("#project_5_back").click(function() {
+			document.querySelector("#projects_top").scrollIntoView();
+			$('#project_list').show('fast').promise();
+			$('#project_1').hide('fast').promise();
+			$('#project_2').hide('fast').promise();
+			$('#project_3').hide('fast').promise();
+			$('#project_4').hide('fast').promise();
+			$('#project_5').hide('fast').promise();
+			$('#project_6').hide('fast').promise();
+		});
+
+		$("#project_6_back").click(function() {
+			document.querySelector("#projects_top").scrollIntoView();
+			$('#project_list').show('fast').promise();
+			$('#project_1').hide('fast').promise();
+			$('#project_2').hide('fast').promise();
+			$('#project_3').hide('fast').promise();
+			$('#project_4').hide('fast').promise();
+			$('#project_5').hide('fast').promise();
+			$('#project_6').hide('fast').promise();
+		});
+
+	})(jQuery);
+  </script>
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script>
+		$('.carousel_1').slick({
+			autoplay: true,
+			autoplaySpeed: 2500,
+			arrows: false,
+		});
+		$('.carousel_2').slick({
+			autoplay: true,
+			autoplaySpeed: 2500,
+			arrows: false,
+		});
+		$('.carousel_4').slick({
+			autoplay: true,
+			autoplaySpeed: 2500,
+			arrows: false,
+		});
+		$('.carousel_5').slick({
+			autoplay: true,
+			autoplaySpeed: 2500,
+			arrows: false,
+		});
+		$('.carousel_6').slick({
+			autoplay: true,
+			autoplaySpeed: 2500,
+			arrows: false,
+		});
+	</script>
+	<script>
+		//Javascript to toggle the menu
+		document.getElementById('nav-toggle').onclick = function(){
+			document.getElementById("nav-content").classList.toggle("hidden");
+		}
+	</script>
+	
+</body>
+
 </html>
